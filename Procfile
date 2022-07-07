@@ -1,0 +1,1 @@
+web: gunicorn omdbservice.wsgi --workers=8 --threads=8 --timeout=3600 --reload
