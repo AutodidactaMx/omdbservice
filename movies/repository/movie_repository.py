@@ -50,7 +50,7 @@ class MovieRepositoryApi:
         if imdbID:
             url = f"{url}&i={imdbID}"
         response = requests.request("GET", url, headers=headers, data=payload)
-        if self.countRequest == 5:
+        if self.countRequest == 3:
             self.countRequest = 0
             self.apikey = self.get_keys()
         if response.status_code == 401:
