@@ -6,8 +6,8 @@ class SearchLogRepository:
 
     def __init__(self) -> None:
         pass
-    
-    def insert(self, searh_log:SearchLogModel) -> None:
-        searh_log.save()        
+
+    def insert(self, search_log:SearchLogModel) -> None:
+        search_log.save()
         
 
